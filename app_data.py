@@ -14,4 +14,5 @@ for i in range(len(dados)):
 plt.plot(eixo_x,eixo_y)
 plt.bar(eixo_x,eixo_y)
 
+plt.title("Crescimento da População Brasileira 1980-2016")
 plt.show()
