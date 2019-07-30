@@ -11,8 +11,11 @@ for i in range(len(dados)):
         eixo_x.append(int(linha[0]))
         eixo_y.append(int(linha[1]))
 
-plt.plot(eixo_x,eixo_y)
-plt.bar(eixo_x,eixo_y)
+plt.plot(eixo_x,eixo_y, color='k', linestyle='--')
+plt.bar(eixo_x,eixo_y, color='#e4e4e4')
 
 plt.title("Crescimento da População Brasileira 1980-2016")
-plt.show()
+plt.xlabel("Ano")
+plt.ylabel("População x100.000.000")
+#plt.show()
+plt.savefig('populacao-brasileira.png', dpi=800)
