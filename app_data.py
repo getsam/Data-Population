@@ -5,6 +5,7 @@ dados = open("DATA/populacao-brasileira.csv").readlines()
 eixo_x = []
 eixo_y = []
 
+
 for i in range(len(dados)):
     if i != 0:
         linha = dados[i].split(";")
@@ -13,6 +14,7 @@ for i in range(len(dados)):
 
 plt.plot(eixo_x,eixo_y, color='k', linestyle='--')
 plt.bar(eixo_x,eixo_y, color='#e4e4e4')
+
 
 plt.title("Crescimento da População Brasileira 1980-2016")
 plt.xlabel("Ano")
